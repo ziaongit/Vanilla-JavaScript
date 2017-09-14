@@ -1,2 +1,2 @@
-# Vanilla-JavaScript-
+# Vanilla JavaScript
 Vanilla JavaScript concepts
