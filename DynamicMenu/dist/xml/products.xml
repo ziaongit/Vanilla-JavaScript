@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+	<menu text="Computers">
+		<menu text="Desktop">
+			<product text="Compaq" image="computers/Compaq.png" />
+			<product text="Lenovo" image="computers/Lenovo.jpg" />
+			<product text="MacPro" image="computers/MacPro.jpg" />
+			<product text="iMac" image="computers/imac.jpg" />
+		</menu>
+		<menu text="Laptop">
+			<product text="Asus" image="computers/Asus.jpg" />
+			<product text="Dell" image="computers/Dell.jpg" />
+			<product text="MacbookPro" image="computers/MacbookPro.jpg" />
+		</menu>
+	</menu>
+	<menu text="Phones">
+		<product text="Google Nexus" image="phones/GoogleNexus5.jpg" />
+		<product text="iPhone" image="phones/iPhone.jpg" />
+		<product text="Samsung Galaxy" image="phones/SamsungGalaxyS5.jpg" />
+	</menu>
+</menus>

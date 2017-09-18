@@ -1,0 +1,133 @@
+/* =========================
+    GENERAL START
+===========================*/
+html, body {
+    background-color: #f0efed;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+.intro {
+    height: 90%;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    display: table;
+}
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+.content {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+}
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0px 0px 300px #000;
+    padding-bottom: 10px;
+    font-size: 225%;
+}
+/* =========================
+    GENERAL END
+===========================*/
+
+/* =========================
+    FOOTER START
+===========================*/
+#footer {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 10%;
+    font-family: Arial;
+    text-shadow: 1px 1px 1px black;
+    border-top: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25),inset 0 -15px 30px rgba(255,255,255,0.3);
+}
+
+/* =========================
+    FOOTER END
+===========================*/
+
+/* =========================
+    NAVIGATION START
+===========================*/
+nav {
+    width: 100%;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    position:relative;
+}
+nav ul {
+    background: #ffffff;
+    list-style:none;
+    padding:0 20px;
+    margin: 0;
+    height: 60px;
+
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color:#333333;
+    display:block;
+    padding:0px 40px;
+    text-decoration:none;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+nav ul li:hover {
+    background: #205791;
+    border-radius: 20px;
+}
+nav ul li:hover > a{
+    color:#ffffff;
+}
+
+nav ul li:hover > ul {
+  display:block;
+}
+nav ul ul {
+    background: #ffffff;
+    padding:0;
+    display:none;
+    width: 100%;
+    position: absolute;
+    top: -61px;
+    left: 0px;
+}
+
+/* =========================
+    NAVIGATION END
+===========================*/
+
+/* =========================
+    CONTENT IMAGE START
+===========================*/
+#productImg img {
+    background-color: #ffffff;
+    width: 400px;
+    height: auto;
+    border: 10px solid #205791;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #000000;
+}
+/* =========================
+    CONTENT IMAGE END
+===========================*/
