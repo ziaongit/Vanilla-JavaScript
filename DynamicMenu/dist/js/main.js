@@ -13,15 +13,12 @@ $(document).ready(function(){
 function generateMenu(xml) {
     var emptySubMenu = $("<ul />");
     var mainMenu = $("<ul />");
-
     $(xml).find('menus').children('menu').each(function() {       
             var li = generateLiNode($(this).attr("text"), $(this).attr("image"));
-
             //get subMenu level 1             
             var subMenuLvl1 = $("<ul />");
             $(this).children().each(function() {
                   var li2 = generateLiNode($(this).attr("text"), $(this).attr("image"));
-
                   //get subMenu level 2  
                   var subMenuLvl2 = $("<ul />");
                   $(this).children().each(function() {
@@ -29,9 +26,9 @@ function generateMenu(xml) {
                   });
 
                   if (subMenuLvl2.html() != emptySubMenu.html())
-                    li2.append(subMenuLvl2);                 
-                  //subMenu level 2 is prepared.
+                    li2.append(subMenuLvl2);
 
+                  //subMenu level 2 is prepared.
                   subMenuLvl1.append(li2);
             });
 
@@ -48,7 +45,12 @@ function generateMenu(xml) {
 function generateLiNode(text, image) {
 
     if(image) {
+        return $('<li id="' + text + '"><a id="image_link" data-image="' + image + '" onmouseover="displayImage(\'' + image + '\')" href="#">' + text + '</a></li>');
+
+        /* This contain mouseleave hideImage funtion 
         return $('<li id="' + text + '"><a id="image_link" data-image="' + image + '" onmouseover="displayImage(\'' + image + '\')" onmouseout="hideImage()" href="#">' + text + '</a></li>');
+        */
+
     } else {
         return $('<li id="' + text + '"><a href="#">' + text + '</a></li>')
     }
@@ -56,12 +58,12 @@ function generateLiNode(text, image) {
 }
 
 function displayImage(imgSrc) {
-
-    console.log(imgSrc)
-
     $('#productImg').html('<img src="dist/img/'+imgSrc+'"/>');
 }
 
-function hideImage() {
+/* hideImage 
+function hideImage(imgSrc) {
     $('#productImg').html('');
 }
+
+*/

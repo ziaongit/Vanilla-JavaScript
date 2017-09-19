@@ -49,10 +49,9 @@ html, body {
     left: 0;
     right: 0;
     width: 100%;
-    height: 10%;
+    height: auto;
     font-family: Arial;
     text-shadow: 1px 1px 1px black;
-    border-top: 1px solid #dbdbdb;
     background-color: #ffffff;
     box-shadow: inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25),inset 0 -15px 30px rgba(255,255,255,0.3);
 }
@@ -66,50 +65,51 @@ html, body {
 ===========================*/
 nav {
     width: 100%;
+    height: auto;
     background: #ffffff;
     padding: 0;
     margin: 0;
-    height: 60px;
     position:relative;
 }
 nav ul {
     background: #ffffff;
+    border-top: 1px solid #dbdbdb;
     list-style:none;
     padding:0 20px;
     margin: 0;
-    height: 60px;
+    height: 65px;
 
 }
 nav ul li {
     display: inline-block;
+    padding-top: 10px;
 }
 nav ul li a {
     color:#333333;
     display:block;
-    padding:0px 40px;
-    text-decoration:none;
+    font-size: 16px;
+    padding: 0px 25px;
+    text-decoration: none;
     float: left;
-    height: 50px;
-    line-height: 50px;
+    height: 45px;
+    line-height: 45px;
 }
-nav ul li:hover {
+nav ul li:hover > a {
+    color:#ffffff;
     background: #205791;
     border-radius: 20px;
 }
-nav ul li:hover > a{
-    color:#ffffff;
-}
-
 nav ul li:hover > ul {
   display:block;
 }
 nav ul ul {
     background: #ffffff;
-    padding:0;
+    border-bottom: 1px solid #dbdbdb;
+    padding:0 20px;
     display:none;
     width: 100%;
     position: absolute;
-    top: -61px;
+    top: -65px;
     left: 0px;
 }
 
@@ -122,7 +122,7 @@ nav ul ul {
 ===========================*/
 #productImg img {
     background-color: #ffffff;
-    width: 400px;
+    width: 360px;
     height: auto;
     border: 10px solid #205791;
     border-radius: 5px;
@@ -130,4 +130,34 @@ nav ul ul {
 }
 /* =========================
     CONTENT IMAGE END
+===========================*/
+
+/* =========================
+    MEDIA QUERIES
+===========================*/
+@media screen and (max-width: 699px) and (min-width: 280px) {
+    nav ul li a {
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0px 15px;
+    }
+    nav ul {
+        padding:0 20px;
+        margin: 0;
+        height: 50px;
+
+    }
+    nav ul ul {
+        top: -50px;
+    }
+   #productImg img {
+        width: 260px;
+        border: 6px solid #205791;
+        border-radius: 3px;
+    }
+}
+
+/* =========================
+    MEDIA QUERIES
 ===========================*/
