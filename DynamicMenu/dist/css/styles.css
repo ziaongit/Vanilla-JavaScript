@@ -1,7 +1,9 @@
-/* =========================
-    GENERAL START
-===========================*/
-html, body {
+/* 
+GENERAL START
+...................................*/
+
+html,
+body {
     background-color: #f0efed;
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@ html, body {
     width: 100%;
     font-family: 'Oswald', sans-serif;
 }
+
 .intro {
     height: 90%;
     width: 100%;
@@ -16,31 +19,31 @@ html, body {
     top: 0;
     display: table;
 }
+
 .intro .inner {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     max-width: none;
 }
+
 .content {
     max-width: 90%;
     margin: 0 auto;
     text-align: center;
     padding: 20px 20px 40px 20px;
 }
-.content h1 {
-    font-family: 'Raleway', sans-serif;
-    text-shadow: 0px 0px 300px #000;
-    padding-bottom: 10px;
-    font-size: 225%;
-}
-/* =========================
-    GENERAL END
-===========================*/
 
-/* =========================
-    FOOTER START
-===========================*/
+
+/* 
+GENERAL END
+............................*/
+
+
+/* 
+FOOTER START
+............................*/
+
 #footer {
     position: fixed;
     bottom: 0;
@@ -53,40 +56,44 @@ html, body {
     font-family: Arial;
     text-shadow: 1px 1px 1px black;
     background-color: #ffffff;
-    box-shadow: inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25),inset 0 -15px 30px rgba(255,255,255,0.3);
 }
 
-/* =========================
-    FOOTER END
-===========================*/
 
-/* =========================
-    NAVIGATION START
-===========================*/
+/* 
+FOOTER END
+............................*/
+
+
+/* 
+NAVIGATION START
+............................*/
+
 nav {
     width: 100%;
     height: auto;
     background: #ffffff;
     padding: 0;
     margin: 0;
-    position:relative;
+    position: relative;
 }
+
 nav ul {
     background: #ffffff;
     border-top: 1px solid #dbdbdb;
-    list-style:none;
-    padding:0 20px;
+    list-style: none;
+    padding: 0 20px;
     margin: 0;
     height: 65px;
-
 }
+
 nav ul li {
     display: inline-block;
     padding-top: 10px;
 }
+
 nav ul li a {
-    color:#333333;
-    display:block;
+    color: #333333;
+    display: block;
     font-size: 16px;
     padding: 0px 25px;
     text-decoration: none;
@@ -94,32 +101,38 @@ nav ul li a {
     height: 45px;
     line-height: 45px;
 }
-nav ul li:hover > a {
-    color:#ffffff;
+
+nav ul li:hover>a {
+    color: #ffffff;
     background: #205791;
     border-radius: 20px;
 }
-nav ul li:hover > ul {
-  display:block;
+
+nav ul li:hover>ul {
+    display: block;
 }
+
 nav ul ul {
     background: #ffffff;
     border-bottom: 1px solid #dbdbdb;
-    padding:0 20px;
-    display:none;
+    padding: 0 20px;
+    display: none;
     width: 100%;
     position: absolute;
     top: -65px;
     left: 0px;
 }
 
-/* =========================
-    NAVIGATION END
-===========================*/
 
-/* =========================
-    CONTENT IMAGE START
-===========================*/
+/* 
+NAVIGATION END
+............................*/
+
+
+/* 
+CONTENT IMAGE START
+............................*/
+
 #productImg img {
     background-color: #ffffff;
     width: 360px;
@@ -128,13 +141,17 @@ nav ul ul {
     border-radius: 5px;
     box-shadow: 0 5px 10px #000000;
 }
-/* =========================
-    CONTENT IMAGE END
-===========================*/
 
-/* =========================
-    MEDIA QUERIES
-===========================*/
+
+/* 
+CONTENT IMAGE END
+............................*/
+
+
+/* 
+MEDIA QUERIES START
+............................*/
+
 @media screen and (max-width: 699px) and (min-width: 280px) {
     nav ul li a {
         font-size: 12px;
@@ -143,21 +160,21 @@ nav ul ul {
         padding: 0px 15px;
     }
     nav ul {
-        padding:0 20px;
+        padding: 0 20px;
         margin: 0;
         height: 50px;
-
     }
     nav ul ul {
         top: -50px;
     }
-   #productImg img {
+    #productImg img {
         width: 260px;
         border: 6px solid #205791;
         border-radius: 3px;
     }
 }
 
-/* =========================
-    MEDIA QUERIES
-===========================*/
+
+/* 
+MEDIA QUERIES END
+............................*/
