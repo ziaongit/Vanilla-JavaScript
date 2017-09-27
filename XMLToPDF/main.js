@@ -60,10 +60,14 @@ function generatePDF(){
     };
     $('#generatePDF').click(function () {   
         doc.fromHTML($('#products').html(), 15, 15, {
-            'width': 170,
-                'elementHandlers': specialElementHandlers
+            'width': 250,
+            'margin': 1,
+            'pagesplit': true, //This will work for multiple pages
+            'elementHandlers': specialElementHandlers
+        }, function() {
+            doc.save('Books.pdf');
         });
-        doc.save('Books.pdf');
+        
         
     });
 }
